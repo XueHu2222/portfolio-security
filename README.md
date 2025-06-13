@@ -1,5 +1,7 @@
 # Laravel Hacktivist Assignment
 
+
+
 ### Access Control (IDOR Prevention)
 - **Route:** `/posts`
 - **Feature:** Users can only view their own posts. Attempting to access posts that do not belong to the logged-in user will return a `403 Forbidden` error.

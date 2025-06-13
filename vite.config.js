@@ -2,11 +2,26 @@ import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
 export default defineConfig({
-    base: '/build/',
     plugins: [
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],
             refresh: true,
         }),
     ],
+    server: {
+        hmr: {
+            host: 'posts-app-95ae69b11cf9.herokuapp.com',
+            protocol: 'wss'
+        },
+    },
+    build: {
+        manifest: true,
+        outDir: 'public/build',
+        rollupOptions: {
+            output: {
+                assetFileNames: 'assets/[name].[hash][extname]',
+                entryFileNames: 'assets/[name].[hash].js',
+            }
+        }
+    }
 });
