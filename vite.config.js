@@ -8,20 +8,8 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    server: {
-        hmr: {
-            host: 'posts-app-95ae69b11cf9.herokuapp.com',
-            protocol: 'wss'
-        },
-    },
     build: {
         manifest: true,
-        outDir: 'public/build',
-        rollupOptions: {
-            output: {
-                assetFileNames: 'assets/[name].[hash][extname]',
-                entryFileNames: 'assets/[name].[hash].js',
-            }
-        }
+        outDir: 'public/build'
     }
 });
