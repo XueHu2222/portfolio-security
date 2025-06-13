@@ -1,8 +1,8 @@
 # Laravel Hacktivist Assignment
 
+## APP_URL: https://posts-app-95ae69b11cf9.herokuapp.com/
 
-
-### Access Control (IDOR Prevention)
+## Access Control (IDOR Prevention)
 - **Route:** `/posts`
 - **Feature:** Users can only view their own posts. Attempting to access posts that do not belong to the logged-in user will return a `403 Forbidden` error.
 - **How to check:**
