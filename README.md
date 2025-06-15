@@ -1,7 +1,6 @@
 # Laravel Hacktivist Assignment
 
-## APP_URL: https://118.25.14.2:8085/
-
+## APP_URL: http://118.25.14.2:8085/
 ## Access Control (IDOR Prevention)
 - **Route:** `/posts`
 - **Feature:** Users can only view their own posts. Attempting to access posts that do not belong to the logged-in user will return a `403 Forbidden` error.
