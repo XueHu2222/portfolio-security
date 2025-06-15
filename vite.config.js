@@ -16,9 +16,5 @@ export default defineConfig({
             host: 'posts-app-95ae69b11cf9.herokuapp.com',
             protocol: 'wss'
         },
-    },
-    build: {
-        manifest: true,
-        outDir: 'public/build',
     }
 });

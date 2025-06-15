@@ -1,6 +1,6 @@
 # Laravel Hacktivist Assignment
 
-## APP_URL: https://posts-app-95ae69b11cf9.herokuapp.com/
+## APP_URL: https://118.25.14.2:8085/
 
 ## Access Control (IDOR Prevention)
 - **Route:** `/posts`
